@@ -1,0 +1,78 @@
+body {
+  /*Adicionando a fonte de acondo com as TAGs do HTML*/
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center; /*Alina os elementos dentro da caixa*/
+
+  margin: 0; /*Remove todas as margens da caixa raiz do "body" | Padrão de 8px no "margin-top"*/
+}
+
+#hero {
+  width: 592px; /*Defini a largura da caixa*/
+  margin: 0px auto 72px; /*Defini uma margem fora da caixa | Adicionando "auto" distribui o tamanho de margem*/
+}
+
+#hero img{
+  margin-bottom: 72px; /*Defini uma margem embaixo fora da caixa*/
+}
+
+h1 {
+  /*Adicionando a fonte de acondo com as TAGs do HTML*/
+  font-family: 'Inter', sans-serif;
+
+  /*Alterando dimensões dos caracteres de texto*/
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: 400;
+
+  margin-bottom: 32px; /*Defini uma margem embaixo fora da caixa*/
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a{
+  /*Definindo a cor dos elementos contidos na TAG*/
+  color: #FF9900;
+}
+
+p, #footer {
+  /*Definindo a cor dos elementos contidos na TAG*/
+  color: #7D7987;
+
+  font-size: 14px;
+  line-height: 28px;
+}
+
+#footer  {
+  margin-bottom: 33px;  /*Coloca uma margem externa na parte de baixo da caixa*/
+}
+
+.line {
+  width: 568px; /*Defini a largura da caixa*/
+  height: 0px; /*Defini a altura da caixa*/
+
+  /*Defini uma borda para a caixa | Já que a caixa possui altura de 0px, as bordas superiores se sobrepõem,
+  fazendo o efeito de linha*/
+  border: 1px #ECEFF2 solid; 
+
+  margin: 0px auto 8px; /*Defini uma margem fora da caixa | Adicionando "auto" distribui o tamanho de margem*/
+}
+
+/*Seletor que seleciona somente o elemento que anterior a ele possui o outro elemento especificado, ou seja,
+nesse caso está sendo selecionado o segundo elemento "a" da linha de código em HTML, já que antes dele
+existe outro elemento "a"*/
+#footer a + a{ 
+  margin-left: 28px; /*Adiciona um margem externa a caixa do segundo elemento de link*/
+}
+
+#balls {
+  /*Comando de posicionamento de elemento na tela | Adicionando "fixed" trava o elemento na visualização da página, 
+  de modo que ele permanece no mesmo local, mesmo rolando a tela */
+  position: fixed;
+  /*Propriedades habilitadas a partir do comando "position:"*/
+  bottom: 0px; 
+  right: 0px;
+  z-index: -1;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html> <!--Defini que esse documento é do tipo "HTML 5"-->
+<html lang="pt-br"> <!--Tag root (raiz) com atributo que defini a linguagem do documento-->
+<head> <!--Contém instruções para a própria página-->
+  <meta charset="UTF-8"> <!--Defini os conjuntos de caractéres para "UTF-8", o qual aceita caractéres especiais-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Defini um nome para a área de visualização da página, e que a largura será a do dispositivo, sem zoom aplicado-->
+  <title>Projeto 01</title> <!--Título da aba da página-->
+
+  <!--"link"-> TAG de associação | Adicionar fontes a página-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!--"href"-> Atributo de indicação de link, buscando "CSS" externo | "rel"-> Atributo de relação-->
+
+  <!--"link"-> TAG de associação | "rel"-> Atributo de relação | "href"-> Atributo de indicação de link, buscando "CSS" interno (sem protocólo na frente)-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body> <!--Contém os elementos da apresentação visual da página-->
+  
+  <!--"div"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "Block" | "id"-> Atributo de identificação, definido com o nome "hero"-->
+  <div id="hero">
+
+    <!--"img"-> TAG de adicionar imagem | "src"-> Atributo do caminho da imagem | "alt"-> Atributo da descrição da imagem sem carregamento-->
+    <img src="./assets/img1.png" alt="Desenho de uma pessoa, vestindo uma camida amarela, em uma sala com móveis"/>
+
+    <!--"h1"-> TAG de adicionar título grande no estilo padrão "block" (Vai de H1 até H6)-->
+    <h1>Ambientes <span>únicos</span> para você!</h1> <!--"span"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "inline"-->
+
+    <!--"p"-> TAG de adicionar parágrafo-->
+    <p>
+      Nós criamos ambientes <strong>exclusívos</strong> e <strong>únicos</strong>, <!--"strong"-> TAG de adicionar texto em negrito no estilo padrão "inline"-->
+      com muito bom gosto e profissionalismo, 
+      investimos tempo e <span>dedicação no seu projeto.</span> <!--"span"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "inline"-->
+    
+      </br> <!--"</br>"-> TAG de adicionar uma quebra de linha-->
+      </br> <!--"</br>"-> TAG de adicionar uma quebra de linha-->
+
+      Tenha <span>ambientes limpos</span> e bem decorados, <!--"span"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "inline"-->
+      transmitindo <strong>elegância</strong> e <strong>finesse</strong> para <!--"strong"-> TAG de adicionar texto em negrito no estilo padrão "inline"-->
+      todo aquele que estiver ali.
+    </p>
+
+  </div>
+
+  <!--"div"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "block" | "id"-> Atributo de identificação, definido com o nome "footer"-->
+  <div id="footer">
+
+    <!--"div"-> TAG de agrupamento de elementos (Container/Caixa) no estilo padrão "block"
+    "class"-> Atributo de clasificação, definido com o nome "line"
+    Adiciona caixa para fazer a linha do rodapé da página-->
+    <div class="line"></div>
+
+  <!--"a"-> TAG de adicionar texto com link no estilo padrão "inline" | "href"-> Atributo de indicação de link | "target"-> Atributo de "alvo", no caso uma nova aba-->
+    <a href="https://instragram.com/moveisparavoce" target="_blank">Instagram</a>
+
+    <!--"a"-> TAG de adicionar texto com link no estilo padrão "inline" | "href"-> Atributo de indicação de link | "target"-> Atributo de "alvo", no caso uma nova aba-->
+    <a href="mailto:contato@moveisparavoce.com" target="_blank">Fale conosco</a>
+
+  </div>
+
+  <!--"img"-> TAG de adicionar imagem no estilo padrão "inline" | "id"-> Atributo de identificação, definido com o nome "balls" | "src"-> Atributo do caminho da imagem | "alt"-> Atributo da descrição da imagem sem carregamento-->
+  <img id="balls" src="./assets/balls.svg" alt="Bolinhas laranjadas no canto direito inferior da tela"/> 
+
+</body>
+</html>
